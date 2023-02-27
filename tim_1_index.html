@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Asteroids</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="gameA.css"/>
+    <link rel="icon" type="image/jpg" href="img/favicon.png"/>
+</head>
+<body>
+   <div id="menu" style="display:block">
+    <div class="title"><p>ASTEROIDS</p></div>
+        <div class="buttons">
+            <div id="play" class="btn1" style="display:block">
+                <a href="#" onclick="startGame()">Play</a>
+            </div>
+            <div id="difficulty" class="btn2" style="display:block">
+                <a href="#" onclick="difficultyMenu()">Difficulty</a>
+            </div>
+            <div id="start" class="btn3" style="display:block">
+                <a href="#" onclick="customMenu()">Customize</a>
+            </div>
+            <div id="start" class="btn4" style="display:block">
+                <a href="../index.html" >Exit</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="GameOver" style="display:none">
+        <div class="title"><p class="go">Game Over</p><p id="score">666</p></div>
+            <div class="buttons">
+                
+                <div id="retry" class="btn2" style="display:block">
+                    <a href="#" onclick="startGame()">Retry</a>
+                </div>
+                <div id="gtmainmenu" class="btn3" style="display:block">
+                    <a href="#" onclick="mainMenu()">Main menu</a>
+                </div>
+                
+            </div>
+        </div>
+        <div id="CustomizeMenu" style="display:none">
+            <div class="title"><p class="go">Customize</p></div>
+                <div class="buttons">
+                    <div id="color" class="btn1" style="display:block">
+                        <a href="#" onclick="blueColor()">Blue</a>
+                    </div>
+                    <div id="color" class="btn2" style="display:block">
+                        <a href="#" onclick="redColor()">Red</a>
+                    </div>
+                    <div id="color" class="btn3" style="display:block">
+                        <a href="#" onclick="yellowColor()">Yellow</a>
+                    </div>
+                    <div id="color" class="btn4" style="display:block">
+                        <a href="#" onclick="orangeColor()">Orange</a>
+                    </div>
+                </div>
+        </div>
+        <div id="DifMenu" style="display:none">
+            <div class="title"><p class="go">Difficulty</p></div>
+            <div class="slidecontainer">
+                <input type="range" class="slider" id="myRange" min="1" max="10" value="5">
+            </div>
+            <div class="buttons">
+            <div id="confirm" class="btn2" style="display:block">
+                <a href="#" onclick="difficultyConfirm()">Confirm</a>
+            </div>
+            </div>
+        </div>
+   <script src="gameA.js"></script>
+</body>
+</html>

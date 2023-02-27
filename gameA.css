@@ -1,0 +1,118 @@
+@font-face {
+    src: url("fonts/Charge-Vector.otf");
+    font-family: cv;
+}
+
+html{
+    overflow: hidden;
+}
+
+body {
+    color: #ffffff;
+    background-color:#000000;
+}
+.title p{
+    font-family: cv;
+    color: #ffffff;
+    font-size: 4em;
+    padding: 10px;
+    position: fixed;
+    top:8%;
+    left: 46%;
+    
+    margin-left: -100px;
+}
+.slidecontainer {
+    width: 30%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 420px;
+    height: 25px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    position: fixed;
+    top:30%;
+    left:39%;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: rgb(49, 21, 175);
+    cursor: pointer;
+  }
+  
+
+
+.buttons{
+    font-family: cv;
+    color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    top:57%;
+    left:49%;
+    
+    margin-left: -100px;
+    height:200px;
+    width:250px;
+    text-align: center;
+}
+.btn1{
+    margin-top: -190px !important;
+}
+.btn2{
+    margin-top: 22px !important;
+}
+.btn3{
+    margin-top: 22px !important;
+}
+.btn4{
+    margin-top: 22px !important;
+}
+
+
+#start a,
+#play a,
+#difficulty a,
+#retry a,
+#color a,
+#confirm a,
+#gtmainmenu a {
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size:2em;
+    display: inline-block;
+}
+#GameOver .buttons {
+    top: 45%;
+}
+
+p#score {
+    top: 20%;
+    left: 52%;
+}
+
+#start a:hover,
+#play a:hover, 
+#difficulty a:hover,
+#retry a:hover,
+#gtmainmenu a:hover { background-color: #ffffff; color: #1bafdb; }
+
